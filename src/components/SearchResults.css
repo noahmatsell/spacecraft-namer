@@ -1,0 +1,10 @@
+.resultsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.result {
+  background: rgba(255,255,255,0.2);
+  color: #ffe200;
+}

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
 .App {
   text-align: center;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .App-logo {
@@ -9,19 +12,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: left;
   color: white;
+  font-size: 50%;
+}
+
+main {
+  background: transparent;
+  color: palegoldenrod;
+  height: 100vh;
+  padding: 2em;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {

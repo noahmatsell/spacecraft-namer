@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Search from './components/Search'
+import SearchResults from './components/SearchResults'
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App: React.FunctionComponent<any> = () => {
+  const [searchResult, setSearchResult] = useState([]);
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Spacecraft Namer</h1>
+      </header>
+      <main>
+        <SearchResults results={searchResult} />
+        <Search setSearchResult={setSearchResult} />
+      </main>
+    </div>
+  );
+};
 
 export default App;
