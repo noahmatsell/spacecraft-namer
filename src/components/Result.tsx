@@ -11,7 +11,7 @@ const formattedName = (name: string) => {
 
 const Result: React.FunctionComponent<ResultProps> = (props) => {
   const { spacecraft } = props;
-  const name = spacecraft.name.replace(/[*"]/g, '');
+  const name = spacecraft.name.replace(/[*",]/g, '');
   const formatted = formattedName(name);
   const buttonRef: React.RefObject<HTMLButtonElement> = React.createRef();
 
