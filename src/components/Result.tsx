@@ -1,6 +1,8 @@
 import * as React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import './Result.css';
+import planet from '../planet.svg';
+import starfleet from '../starfleet.svg';
 
 interface ResultProps {
   spacecraft: any;
@@ -21,9 +23,11 @@ const Result: React.FunctionComponent<ResultProps> = (props) => {
       buttonRef.current!.textContent = 'Copy'
     }, 1000);
   }
+  const typeLogo = spacecraft.type === 'startrek' ? starfleet : planet;
 
   return (
     <div className="result">
+      <img src={typeLogo}></img>
       <h1>{name}</h1>
       <h2>{formatted}</h2>
       <CopyToClipboard text={formatted}

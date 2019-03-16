@@ -31,7 +31,7 @@ const Search: React.FunctionComponent<SearchProps> = (props) => {
 
     const spacecrafts = threeRandomSpacecrafts.map((spacecraft: any) => {
       const { name, dateStatus, owner, operator } = spacecraft;
-      return { name, date: dateStatus, operator: operator ? operator.name : null, owner: owner ? owner.name : null };
+      return { type: 'startrek', name, date: dateStatus, operator: operator ? operator.name : null, owner: owner ? owner.name : null };
     });
 
     setSearchResult(spacecrafts);
@@ -49,7 +49,7 @@ const Search: React.FunctionComponent<SearchProps> = (props) => {
 
     const spacecrafts = threeRandomSpacecrafts.map((spacecraft: any) => {
       const { gsx$name, gsx$comments, gsx$civilisation, gsx$class } = spacecraft;
-      return { name: gsx$name['$t'], civilisation: gsx$civilisation['$t'], class: gsx$class['$t'], comments: gsx$comments['$t'] };
+      return { type: 'theculture', name: gsx$name['$t'], civilisation: gsx$civilisation['$t'], class: gsx$class['$t'], comments: gsx$comments['$t'] };
     });
 
     setSearchResult(spacecrafts);

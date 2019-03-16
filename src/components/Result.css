@@ -9,3 +9,16 @@
   font-size: 60%;
   display: inline-block;
 }
+
+.result {
+  position: relative;
+}
+
+.result img {
+  height: 32px;
+  width: 32px;
+  fill: white;
+  position: absolute;
+  left: 5%;
+  top: 5%; 
+}
