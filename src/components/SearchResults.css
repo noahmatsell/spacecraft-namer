@@ -7,4 +7,10 @@
 .result {
   background: rgba(255,255,255,0.2);
   color: #ffe200;
+  padding: 2em;
+}
+
+.resultsContainer .spaceship {
+  grid-column-start: 2;
+  height: 150px;
 }

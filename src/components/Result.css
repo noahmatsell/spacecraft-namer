@@ -1,0 +1,9 @@
+.result h2 {
+  display: inline-block;
+  margin: 0 .2em;
+}
+
+.result button.copyButton {
+  font-size: 60%;
+  display: inline-block;
+}
