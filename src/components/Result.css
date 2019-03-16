@@ -1,6 +1,8 @@
 .result h2 {
   display: inline-block;
   margin: 0 .2em;
+  background: rgba(255,255,255,0.2);
+  padding: .25em;
 }
 
 .result button.copyButton {
