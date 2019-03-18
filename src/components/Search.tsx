@@ -58,6 +58,7 @@ const Search: React.FunctionComponent<SearchProps> = (props) => {
   return (
     <div className="searchContainer">
       <h2>Generate Your Spacecraft Name</h2>
+      <p>Name your project, server, or app after a spacecraft from Star Trek or The Culture series.</p>
       <button onClick={handleStarTrekSubmit}>Get Star Trek Spacecrafts</button>
       <button onClick={handleTheCultureSubmit}>Get The Culture Spacecrafts</button>
     </div>
